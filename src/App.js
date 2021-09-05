@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import FunctionContextComponent from './FunctionContextComponent'
 import ClassContextComponent from './ClassContextComponent'
 
+import LoginPlain from './useReducer/LoginPlain'
+
 export const ThemeContext = React.createContext()
 
 export default function App() {
@@ -17,8 +19,9 @@ export default function App() {
         <button onClick={toggleTheme}>Toggle Theme</button>
         <FunctionContextComponent />
         <ClassContextComponent />
-
       </ThemeContext.Provider>
+
+      <LoginPlain />
     </>
 
 
